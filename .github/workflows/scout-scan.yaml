@@ -39,7 +39,7 @@ jobs:
         if: always()
         id: summary
         with:
-          create-html: true
+          create-html: false
 
       - name: Send email with report
         if: always()
@@ -52,5 +52,6 @@ jobs:
           from: GitHub Actions
           to: boris.lavrishchev.qubership@gmail.com
           subject: Workflow Report
-          body: ${{ steps.summary.outputs.job-summary-html }}
-          html_body: ${{ steps.summary.outputs.job-summary-html }}
+          #body: ${{ steps.summary.outputs.job-summary-html }}
+          html_body: ${{ steps.summary.outputs.job-summary }}
+          convert_markdown: true

@@ -39,6 +39,7 @@ jobs:
         if: always()
         run: |
           echo ${GITHUB_STEP_SUMMARY}
+          ls -la ${GITHUB_STEP_SUMMARY}
           cat ${GITHUB_STEP_SUMMARY}
       - name: Send mail
         if: always()

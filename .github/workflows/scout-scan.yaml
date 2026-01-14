@@ -17,17 +17,17 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Docker login
-        uses: docker/login-action@v3
+        uses: docker/login-action@5e57cd118135c172c3672efd75eb46360885c0ef # v3
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_RW_TOKEN }}
 
       - name: Run Docker Scout CVEs
         id: scout
-        uses: docker/scout-action@v1
+        uses: docker/scout-action@f8c776824083494ab0d56b8105ba2ca85c86e4de # v1
         with:
           command: cves
           image: ${{ inputs.image }}
@@ -35,7 +35,7 @@ jobs:
           only-fixed: false
           exit-code: true
           sarif-file: scout-results.sarif
-      - uses: austenstone/job-summary@v2.0
+      - uses: austenstone/job-summary@67b7e1f68ee55e44d073ab7354e7b580cd09567c # v2.0
         if: always()
         id: summary
         with:
@@ -43,7 +43,7 @@ jobs:
 
       - name: Send email with report
         if: always()
-        uses: dawidd6/action-send-mail@v6
+        uses: dawidd6/action-send-mail@6d98ae34d733f9a723a9e04e94f2f24ba05e1402 # v6
         with:
           server_address: smtp.gmail.com
           server_port: 465

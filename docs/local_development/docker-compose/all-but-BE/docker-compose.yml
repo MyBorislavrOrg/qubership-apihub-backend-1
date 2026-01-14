@@ -1,7 +1,7 @@
 version: '3.9'
 services:
     qubership-apihub-build-task-consumer:
-        image: ghcr.io/netcracker/qubership-apihub-build-task-consumer:dev
+        image: ghcr.io/netcracker/qubership-apihub-build-task-consumer:dev@sha256:2c3403980ede25b88db5e57b464e39ff087c91b2fd7d674621ad73c393658a19
         container_name: qubership-apihub-build-task-consumer
         network_mode: host
         env_file: "qubership-apihub-build-task-consumer.env"
@@ -19,7 +19,7 @@ services:
                     memory: 2G
 
     qubership-apihub-ui:
-        image: ghcr.io/netcracker/qubership-apihub-ui:dev
+        image: ghcr.io/netcracker/qubership-apihub-ui:dev@sha256:dfe1df09dab8791622b0f998eab2254243bd778c81729ae1b4389d7e5f3fcf25
         container_name: qubership-apihub-ui
         network_mode: host
         env_file: "qubership-apihub-ui.env"
@@ -39,7 +39,7 @@ services:
     ###### 3rd party services
     
     postgres:
-        image: docker.io/postgres
+        image: docker.io/postgres@sha256:2d417d4c88058c9707bd19d45f95c1db2b087507b89d44f669d43f596781614e
         container_name: postgres
         command:
             - "postgres"

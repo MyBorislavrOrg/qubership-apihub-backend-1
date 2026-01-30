@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.23.6
 
 require (
-	github.com/buraksezer/olric v0.4.7
+	github.com/buraksezer/olric v0.7.3
 	github.com/buraksezer/olric-cloud-plugin v0.3.0-beta.4
 	github.com/coreos/go-oidc/v3 v3.14.1
 	github.com/crewjam/saml v0.5.1

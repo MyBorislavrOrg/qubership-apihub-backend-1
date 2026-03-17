@@ -9,7 +9,7 @@ require (
 	github.com/buraksezer/olric-cloud-plugin v0.3.0-beta.4
 	github.com/coreos/go-oidc/v3 v3.14.1
 	github.com/crewjam/saml v0.5.1
-	github.com/go-ldap/ldap v3.0.3+incompatible
+	github.com/go-ldap/ldap v3.4.13+incompatible
 	github.com/go-pg/pg/v10 v10.15.0
 	github.com/go-playground/validator/v10 v10.30.1
 	github.com/go-resty/resty/v2 v2.17.1

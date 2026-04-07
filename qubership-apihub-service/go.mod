@@ -2,7 +2,7 @@ module github.com/Netcracker/qubership-apihub-backend/qubership-apihub-service
 
 go 1.23.0
 
-toolchain go1.23.6
+toolchain go1.26.2
 
 require (
 	github.com/buraksezer/olric v0.4.7

@@ -39,7 +39,7 @@ services:
     ###### 3rd party services
     
     postgres:
-        image: docker.io/postgres@sha256:2d417d4c88058c9707bd19d45f95c1db2b087507b89d44f669d43f596781614e
+        image: docker.io/postgres@sha256:78481659c47e862334611ccdaf7c369c986b3046da9857112f3b309114a65fb4
         container_name: postgres
         command:
             - "postgres"

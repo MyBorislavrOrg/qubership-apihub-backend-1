@@ -1,7 +1,7 @@
 version: '3.9'
 services:
     qubership-apihub-build-task-consumer:
-        image: ghcr.io/netcracker/qubership-apihub-build-task-consumer:dev@sha256:2c3403980ede25b88db5e57b464e39ff087c91b2fd7d674621ad73c393658a19
+        image: ghcr.io/netcracker/qubership-apihub-build-task-consumer:dev@sha256:dc76efca34af1acad3b73fc5ee6b849685b5089f13dfe1b39272db02dceada3b
         container_name: qubership-apihub-build-task-consumer
         network_mode: host
         env_file: "qubership-apihub-build-task-consumer.env"

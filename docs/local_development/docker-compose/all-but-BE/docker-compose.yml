@@ -19,7 +19,7 @@ services:
                     memory: 2G
 
     qubership-apihub-ui:
-        image: ghcr.io/netcracker/qubership-apihub-ui:dev@sha256:dfe1df09dab8791622b0f998eab2254243bd778c81729ae1b4389d7e5f3fcf25
+        image: ghcr.io/netcracker/qubership-apihub-ui:dev@sha256:586e09ef9a7a8c0c7a5a08467b3d13509ece2d3ed01a0df6ceb803a62aecd161
         container_name: qubership-apihub-ui
         network_mode: host
         env_file: "qubership-apihub-ui.env"

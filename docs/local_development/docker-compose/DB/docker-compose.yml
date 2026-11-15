@@ -1,7 +1,7 @@
 version: "3.9"
 services:
     postgres:
-        image: docker.io/postgres@sha256:2d417d4c88058c9707bd19d45f95c1db2b087507b89d44f669d43f596781614e
+        image: docker.io/postgres@sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc
         container_name: postgres
         command:
             - "postgres"
